@@ -290,11 +290,31 @@ const doc = new Document({
                 width: { size: 6500, type: WidthType.DXA },
                 shading: { fill: "1A5276", type: ShadingType.CLEAR },
                 margins: { top: 100, bottom: 100, left: 150, right: 150 },
-                children: [new Paragraph({ children: [new TextRun({ text: "Value (Qiymat) — nima yozish kerak", bold: true, size: 22, font: "Arial", color: "FFFFFF" })] })]
-              })
-            ]
-          }),
-          ...[
+                children: [
+  new Paragraph({
+    children: [
+      new TextRun({
+        text: "Value (Qiymat) — nima yozish kerak",
+        bold: true,
+        size: 22,
+        font: "Arial",
+        color: "FFFFFF"
+      })
+    ]
+  }),
+
+  ...[
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: "Bu qo‘shimcha paragraph",
+          size: 20,
+          font: "Arial"
+        })
+      ]
+    })
+  ]
+]
 TOKEN = os.getenv("8766748683:AAFJ6cKF56fTORAISb6uQzuojpHRTxRJVGI")
 )"],
             ["ADMIN_ID", "5594795335
