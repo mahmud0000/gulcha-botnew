@@ -273,49 +273,88 @@ const doc = new Document({
 
       spacing(),
       new Table({
-        width: { size: 9000, type: WidthType.DXA },
-        columnWidths: [2500, 6500],
-        rows: [
-  new TableRow({
-    children: [
-      new TableCell({
-        borders,
-        width: { size: 2500, type: WidthType.DXA },
-        shading: { fill: "1A5276", type: ShadingType.CLEAR },
-        margins: { top: 100, bottom: 100, left: 150, right: 150 },
-        children: [
-          new Paragraph({
-            children: [
-              new TextRun({
-                text: "Key (Nom)",
-                bold: true,
-                size: 22,
-                font: "Arial",
-                color: "FFFFFF"
-              })
-            ]
-          })
-        ]
-      }),
+  width: { size: 9000, type: WidthType.DXA },
 
-      new TableCell({
-        borders,
-        width: { size: 6500, type: WidthType.DXA },
-        shading: { fill: "1A5276", type: ShadingType.CLEAR },
-        margins: { top: 100, bottom: 100, left: 150, right: 150 },
+  columnWidths: [2500, 6500],
 
-        children: [
-          new Paragraph({
-            children: [
-              new TextRun({
-                text: "Value (Qiymat) — nima yozish kerak",
-                bold: true,
-                size: 22,
-                font: "Arial",
-                color: "FFFFFF"
-              })
-            ]
-          }),
+  rows: [
+    new TableRow({
+      children: [
+
+        new TableCell({
+          borders,
+
+          width: {
+            size: 2500,
+            type: WidthType.DXA
+          },
+
+          shading: {
+            fill: "1A5276",
+            type: ShadingType.CLEAR
+          },
+
+          margins: {
+            top: 100,
+            bottom: 100,
+            left: 150,
+            right: 150
+          },
+
+          children: [
+            new Paragraph({
+              children: [
+                new TextRun({
+                  text: "Key (Nom)",
+                  bold: true,
+                  size: 22,
+                  font: "Arial",
+                  color: "FFFFFF"
+                })
+              ]
+            })
+          ]
+        }),
+
+        new TableCell({
+          borders,
+
+          width: {
+            size: 6500,
+            type: WidthType.DXA
+          },
+
+          shading: {
+            fill: "1A5276",
+            type: ShadingType.CLEAR
+          },
+
+          margins: {
+            top: 100,
+            bottom: 100,
+            left: 150,
+            right: 150
+          },
+
+          children: [
+            new Paragraph({
+              children: [
+                new TextRun({
+                  text: "Value (Qiymat) — nima yozish kerak",
+                  bold: true,
+                  size: 22,
+                  font: "Arial",
+                  color: "FFFFFF"
+                })
+              ]
+            })
+          ]
+        })
+
+      ]
+    })
+  ]
+}),
 
           ...[
             new Paragraph({
