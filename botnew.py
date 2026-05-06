@@ -276,44 +276,62 @@ const doc = new Document({
         width: { size: 9000, type: WidthType.DXA },
         columnWidths: [2500, 6500],
         rows: [
-          new TableRow({
-            children: [
-              new TableCell({
-                borders,
-                width: { size: 2500, type: WidthType.DXA },
-                shading: { fill: "1A5276", type: ShadingType.CLEAR },
-                margins: { top: 100, bottom: 100, left: 150, right: 150 },
-                children: [new Paragraph({ children: [new TextRun({ text: "Key (Nom)", bold: true, size: 22, font: "Arial", color: "FFFFFF" })] })]
-              }),
-              new TableCell({
-                borders,
-                width: { size: 6500, type: WidthType.DXA },
-                shading: { fill: "1A5276", type: ShadingType.CLEAR },
-                margins: { top: 100, bottom: 100, left: 150, right: 150 },
-                children: [
-  new Paragraph({
+  new TableRow({
     children: [
-      new TextRun({
-        text: "Value (Qiymat) — nima yozish kerak",
-        bold: true,
-        size: 22,
-        font: "Arial",
-        color: "FFFFFF"
+      new TableCell({
+        borders,
+        width: { size: 2500, type: WidthType.DXA },
+        shading: { fill: "1A5276", type: ShadingType.CLEAR },
+        margins: { top: 100, bottom: 100, left: 150, right: 150 },
+        children: [
+          new Paragraph({
+            children: [
+              new TextRun({
+                text: "Key (Nom)",
+                bold: true,
+                size: 22,
+                font: "Arial",
+                color: "FFFFFF"
+              })
+            ]
+          })
+        ]
+      }),
+
+      new TableCell({
+        borders,
+        width: { size: 6500, type: WidthType.DXA },
+        shading: { fill: "1A5276", type: ShadingType.CLEAR },
+        margins: { top: 100, bottom: 100, left: 150, right: 150 },
+
+        children: [
+          new Paragraph({
+            children: [
+              new TextRun({
+                text: "Value (Qiymat) — nima yozish kerak",
+                bold: true,
+                size: 22,
+                font: "Arial",
+                color: "FFFFFF"
+              })
+            ]
+          }),
+
+          ...[
+            new Paragraph({
+              children: [
+                new TextRun({
+                  text: "Bu qo‘shimcha paragraph",
+                  size: 20,
+                  font: "Arial"
+                })
+              ]
+            })
+          ]
+        ]
       })
     ]
-  }),
-
-  ...[
-    new Paragraph({
-      children: [
-        new TextRun({
-          text: "Bu qo‘shimcha paragraph",
-          size: 20,
-          font: "Arial"
-        })
-      ]
-    })
-  ]
+  })
 ]
 TOKEN = os.getenv("8766748683:AAFJ6cKF56fTORAISb6uQzuojpHRTxRJVGI")
 )"],
