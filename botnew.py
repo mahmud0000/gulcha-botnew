@@ -158,13 +158,39 @@ const doc = new Document({
         paragraph: { spacing: { before: 240, after: 80 }, outlineLevel: 1 } },
     ]
   },
-  sections: [{
-    properties: {
-      page: {
-        size: { width: 12240, height: 15840 },
-        margin: { top: 1440, right: 1440, bottom: 1440, left: 1440 }
-      }
-    },
+  const doc = new Document({
+
+  sections: [
+
+    {
+
+      properties: {
+
+        page: {
+
+          size: {
+
+            width: 12240,
+
+            height: 15840
+
+          },
+
+          margin: {
+
+            top: 1440,
+
+            right: 1440,
+
+            bottom: 1440,
+
+            left: 1440
+
+          }
+
+        }
+
+      },
     children: [
 
       // MUQOVA
