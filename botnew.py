@@ -295,8 +295,7 @@ const doc = new Document({
             ]
           }),
           ...[
-                  ["BOT_TOKEN", "8766748683:AAFJ6cKF56fTORAISb6uQzuojpHRTxRJVGI
-)"],
+TOKEN = os.getenv("8766748683:AAFJ6cKF56fTORAISb6uQzuojpHRTxRJVGI")
 )"],
             ["ADMIN_ID", "5594795335
 ) — @userinfobot dan oling"],
